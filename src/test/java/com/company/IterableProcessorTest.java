@@ -77,6 +77,19 @@ class IterableProcessorTest {
     }
 
     @Test
+    void filter_bool() {
+        List<Boolean> expected = new ArrayList<>();
+        expected.add(true);
+        expected.add(true);
+        List<Boolean> testData = new ArrayList<>();
+        testData.add(true);
+        testData.add(false);
+        testData.add(true);
+        Iterable<Boolean> actual = IterableProcessor.filter(testData, bool -> bool == true);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void transform_integer() {
         List<Integer> expected = new ArrayList<>();
         expected.add(2);
@@ -141,6 +154,24 @@ class IterableProcessorTest {
         testData.add(4.04);
         testData.add(5.02);
         Iterable<Double> actual = IterableProcessor.transform(testData, doublePrecision -> doublePrecision * 2);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void transform_bool() {
+        List<Boolean> expected = new ArrayList<>();
+        expected.add(false);
+        expected.add(false);
+        expected.add(false);
+        List<Boolean> testData = new ArrayList<>();
+        testData.add(true);
+        testData.add(false);
+        testData.add(true);
+        Iterable<Boolean> actual = IterableProcessor.transform(testData, bool -> {
+            if(bool == true) {
+                return false;
+            }
+            return bool; });
         assertEquals(expected, actual);
     }
 }
