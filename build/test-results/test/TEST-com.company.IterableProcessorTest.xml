@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.company.IterableProcessorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-11-02T14:46:28" hostname="DESKTOP-D76N532" time="0.022">
+  <properties/>
+  <testcase name="transform_double()" classname="com.company.IterableProcessorTest" time="0.013"/>
+  <testcase name="transform_string()" classname="com.company.IterableProcessorTest" time="0.001"/>
+  <testcase name="filter_double()" classname="com.company.IterableProcessorTest" time="0.001"/>
+  <testcase name="transform_integer()" classname="com.company.IterableProcessorTest" time="0.001"/>
+  <testcase name="transform_character()" classname="com.company.IterableProcessorTest" time="0.001"/>
+  <testcase name="filter_string()" classname="com.company.IterableProcessorTest" time="0.001"/>
+  <testcase name="filter_integer()" classname="com.company.IterableProcessorTest" time="0.001"/>
+  <testcase name="filter_character()" classname="com.company.IterableProcessorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
